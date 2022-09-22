@@ -1,23 +1,31 @@
-@import url("./text.css");
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 
-html {
+body {
   color: darkslategrey;
-  background-color: white;
   font-family: arial, sans-serif;
-  font-size: 1 rem;
+  font-size: 17px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#copyright {
+  font-weight: bold;
+  font-style: italic;
 }
 
 h1 {
-	font-family: 'Audiowide', cursive;
   font-size: 30px;
+  font-family: 'Audiowide', cursive;
 }
 
 h2 {
   font-size: 24px;
   background-color: lightskyblue;
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
 h1,
@@ -31,7 +39,6 @@ a,
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -40,47 +47,76 @@ h1 a,
 h1 a:visited {
   color: white;
 }
-
 h2 a,
 h2 a:visited {
   color: lightskyblue;
 }
-
 h1:hover a,
 h2:hover a {
   color: darkblue;
 }
 
-.material-icons{
-	font-size: 1rem;
+.material-icons {
+  font-size: 1rem;
 }
 
-.material-icons, p {
-	line-height:1.5rem
+p,
+.material-icons {
+  line-height: 1.5rem;
 }
 
-.btn{
-	font-size: 1.3rem;
+a .btn {
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
-#social{
-	color: white;
-	font-size: 2rem;
+a .btn:hover {
+  color: white;
+  background-color: darkblue;
+  text-decoration: none;
 }
 
-
-.fa-square-facebook, .fa-linkedin {
-	color:navy ;
+#social {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
 }
 
-.fa-square-twitter{
-		color: dodgerblue;
+#social a:hover {
+  text-decoration: none;
 }
 
-#elon, h1{
-	text-allign: left;
+#social .fa-square-facebook {
+  color: navy;
 }
 
-.topo{
-	color: white;
+#social .fa-square-twitter {
+  color: dodgerblue;
+}
+
+#social .fa-linkedin {
+  color: navy;
+}
+
+@media print {
+  body,
+  h1,
+  h2,
+  a,
+  h2 a {
+    color: black;
+    font-family: Times, serif;
+  }
+
+  h1#elon {
+    text-align: left;
+  }
+
+  h2 {
+    background-color: unset;
+  }
+
+  p a.topo {
+    color: transparent;
+  }
 }
